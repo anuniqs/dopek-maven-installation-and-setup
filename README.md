@@ -48,7 +48,7 @@ Maven : https://maven.apache.org/download.cgi
               mvn archetype:generate -DgroupId=com.devops -DartifactId=Demo1 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
               mvn archetype:generate -DgroupId=com.devops -DartifactId=Demo2 -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 
-#### Sonarqube Anaylsis Properties to be added in Jenkins Job for code quality:
+#### Sonarqube Anaylsis Properties to be added in Jenkins Job for code quality,
 
               sonar.projectKey=my:Project
               sonar.projectName=Myprojname:$BUILD_NUMBER
@@ -56,7 +56,7 @@ Maven : https://maven.apache.org/download.cgi
               sonar.language=java
               sonar.sources=src/main/java
 
-#### To deploy artifacts with Build number:
+#### To deploy artifacts with Build number,
 
     In pom.xml: <version>1.2.${​​​​​​​​​v}​​​​​​​​​-SNAPSHOT</version>
     In mvn build:  clean install -Dv=${​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​BUILD_NUMBER}​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
